@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Students Form</h1>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token%}
+    <input type="text" name="stud_id" value="{{data.stud_id}}" placeholder="stud_id"><br>
+    <input type="text" name="stud_name" value="{{data.stud_name}}" placeholder="stud_name"><br>
+    <input type="text" name="age" value="{{data.age}}" placeholder="age"><br>
+    <input type="file" name="image" value="{{data.image}}">
+<!--    {{form.as_p}}-->
+    <button type="submit">submit</button>
+
+</form>
+{{ form.errors }}
+
+</body>
+</html>

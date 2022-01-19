@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>product_name</th>
+        <th>price</th>
+        <th>details</th>
+        <th>delete</th>
+        <th>update</th>
+    </tr>
+    {% for i in data %}
+    <tr>
+        <td>{{i.product_name}}</td>
+        <td>{{i.price}}</td>
+    <td>{{i.details}}</td>
+        <td><a href="{% url 'dlt' i.id %}">delete</a></td>
+    <td><a href="{% url 'update' i.id %}">update</a></td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>

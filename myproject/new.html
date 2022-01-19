@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <style>
+        body{
+        background-color:blue;
+        }
+       form
+       {
+       background-color:gray;
+       width:50%;
+       margin:auto;
+       padding:20px;
+       }
+       label
+       {
+       display:inline-blocks;
+       float:left;
+       clear:left;
+       width:40%;
+       text-align:left;
+       }
+       input
+       {
+       display:inline-blocks;
+       float:left;
+       }
+    </style>
+</head><center>
+<h1>survey form</h1></center>
+<body><form>
+<label>First Name:</label>
+<input type="text"placeholder="Firstname" ><br><br>
+    <label>Last Name:</label>
+    <input type="text"placeholder="Lastname"><br><br>
+    <label>DOB:</label>
+    <input type="date"placeholder="dob"><br><br>
+    <label>Age:</label>
+    <input type="number"placeholder="age"><br><br>
+    <label>Gender:</label>
+    <input type="radio"name="gender"value="male">Male<br><label>.</label>
+    <input type="radio"name="gender"value="female">Female<br><label>.</label>
+    <input type="radio" name="gender"value="others">others<br><br>
+    <label>Address:</label>
+    <textarea name="address"placeholder="address"></textarea><br><br>
+    <label>Qualification:</label>
+    <select>
+        <option value="SSLC">SSLC</option>
+         <option value="PLUSTWO">PLUSTWO</option>
+         <option value="DEGREE">DEGREE</option>
+    </select><br><br>
+    <label>Email id:</label>
+    <input type="text" placeholder="email"><br><br>
+    <label>Hobby</label>
+    <input type="checkbox" name="Drawing">Drawing<br>
+    <label>.</label>
+    <input type="checkbox" name="Watching TV">Watching TV<br>
+    <label>.</label>
+    <input type="checkbox" name="others">others <br><br>
+   <center> <button type="submit">submit</button></center>
+</form>
+</body>
+</html>

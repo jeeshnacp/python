@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body><table><tr>
+<th>stud_id</th>
+<th>stud_name</th>
+<th>age</th>
+<th>image</th>
+    <th>action</th>
+</tr>
+
+    {% for i in data1 %}
+    <tr>
+<td>{{i.stud_id}}</td>
+<td>{{i.stud_name}}</td>
+<td>{{i.age}}</td>
+        {% if i.image %}
+<td><img src="{{i.image.url}}"width="50px"height="50px"></td>
+        {% endif %}
+    <td>
+        <a href="{% url 'dlt' i.id %}">delete</a>
+        <a href="{% url 'updatestd' i.id %}">update</a>
+    </td>
+
+    </tr>
+    {% endfor %}
+</table>
+
+<a href="{% url 'index1' %}">index</a></body></html>

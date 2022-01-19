@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body><hi>hi</hi>
+<table><tr>
+    <th>name</th>
+    <th>age</th>
+    <th>add</th>
+    <th>mark</th>
+    <th>action</th>
+</tr>
+{% for i in data %}
+<tr>
+    <td>{{i.std.name}}</td>
+<td>{{i.std.age}}</td>
+<td>{{i.std.add}}</td>
+<td><a href="{% url 'dlt' i.id %}">delete</a> </td></tr></table>
+{% endfor %}
+</body>
+</html>
